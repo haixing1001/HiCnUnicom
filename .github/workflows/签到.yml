@@ -2,14 +2,14 @@ name: 签到
 
 on:
   push:
-    branches: 
-      - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: 30 04,23 * * ?
   watch:
     types: started
-  schedule:
-    #格林尼治时间23：05，东八区北京时间7：05
-    - cron: 05 23 * * *
-
+    
 jobs:
   run-it:
     runs-on: ubuntu-latest
