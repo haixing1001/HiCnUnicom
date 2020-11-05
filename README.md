@@ -4,7 +4,7 @@
 
 1、Fork 本仓库
 
-2、在你 Fork 的本仓库下的 Settings -> Secrets 页面追加以下几个secret秘密环境变量
+2、在你 Fork 的仓库下的 Settings -> Secrets 页面追加以下几个secret秘密环境变量
 变量名	      含义	
 HAOMA  要签到的手机号码
 MM     手机号码的服务密码
