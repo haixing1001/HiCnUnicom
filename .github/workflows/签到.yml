@@ -27,20 +27,20 @@ jobs:
           run: |
            bash CnUnicom.sh ${haoma} ${mm} ${appid}
            
-         - name: Run 号码2
-           env:
+        - name: Run 号码2
+          env:
             haoma2: ${{ secrets.HAOMA2 }}
             mm2: ${{ secrets.MM2 }}
             appid2: ${{ secrets.APPID2 }}
-           run: |
+          run: |
             bash CnUnicom.sh ${haoma2} ${mm2} ${appid2}
 
-         - name: Run 号码3
-           env:
+        - name: Run 号码3
+          env:
             haoma3: ${{ secrets.HAOMA3 }}
             mm3: ${{ secrets.MM3 }}
             appid3: ${{ secrets.APPID3 }}
-           run: |
+          run: |
             bash CnUnicom.sh ${haoma3} ${mm3} ${appid3}
            
 #         - name: Run 号码4
